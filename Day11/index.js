@@ -101,10 +101,13 @@ promise4
     console.log('Promise Failed to resolve ', value)
   })
 
-// Promise.all([promise1,promise2,promise3,promise4]).then((values)=>{
-//     console.log(values);
-// }).catch((value)=> console.log('Promise Failed ',value))
+//   Promise.all method returs the array of values that are fulfilled ;
 
-Promise.race([promise1, promise2, promise3, promise4])
-  .then(val => console.log('The First Promise Resolved is --->', val))
-  .catch(data => console.log(data));
+Promise.all([promise1,promise2,promise3]).then((values)=>{
+    console.log('Values are ', values);
+})
+// .catch((value)=> console.log('Promise Failed ',value))
+
+// Promise.race([promise1, promise2, promise3, promise4])
+//   .then(val => console.log('The First Promise Resolved is --->', val))
+//   .catch(data => console.log(data));
