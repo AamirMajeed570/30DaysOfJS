@@ -92,7 +92,6 @@ const promise4 = new Promise((resolve, reject) => {
     reject(404)
   }, 2000)
 })
-
 promise4
   .then(value => {
     console.log('Promise Resolved with a value -->', value)
