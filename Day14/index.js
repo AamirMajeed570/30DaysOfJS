@@ -83,7 +83,6 @@ class Account{
         return this.#displayBalance();
     }
     updatedBalance(){
-        console.log(this.#displayBalance);
         return this.#updateBalance(20000);
     }
 }
